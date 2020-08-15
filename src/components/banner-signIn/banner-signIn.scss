@@ -1,0 +1,26 @@
+.banner-signIn-div{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .intro-h2 h2{
+    width: 742px;
+    height: 150px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #fff;
+    }
+    .landing-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
