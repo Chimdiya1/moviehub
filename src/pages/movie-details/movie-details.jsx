@@ -1,10 +1,11 @@
 import React from "react";
-import Genres from './genres'
+//import Genres from './genres'
 import Nav from "../../components/nav/nav.component";
 import "./movie-details.styles.scss";
 import { ReactComponent as PlayIcon } from "../../assets/images/play3.svg";
 import ReactStars from 'react-rating-stars-component';
 import axios from 'axios';
+import Footer from '../../components/footer/footer.component';
 
 
 class MovieDetails extends React.Component {
@@ -65,6 +66,7 @@ class MovieDetails extends React.Component {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

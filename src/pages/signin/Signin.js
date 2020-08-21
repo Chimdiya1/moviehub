@@ -1,9 +1,9 @@
 import React from 'react';
 import BannerSignIn from '../../components/banner-signIn/banner-signIn';
 import BannerSignInForm from '../../components/SignIn-form-banner/SignIn-form-banner';
-import BannerMovieHub from '../../components/SignIn-movieHub/SignIn-movieHub';
 import './signin.scss';
 import Nav from '../../components/nav/nav.component';
+import Footer from '../../components/footer/footer.component';
 
 
 function Signin() {
@@ -20,7 +20,8 @@ function Signin() {
             {/* <h2>Watch the best movies on the Go.</h2> */}
             </div>
           </div>
-       </div>
+         </div>
+         <Footer/>
       </>
        
        

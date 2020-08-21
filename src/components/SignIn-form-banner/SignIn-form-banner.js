@@ -2,7 +2,6 @@ import React from 'react';
 import BannerMovieHub from './../SignIn-movieHub/SignIn-movieHub';
 import "./SignIn-form-banner.scss";
 import {Link} from 'react-router-dom'
-import Logo from '../../assets/logo.png';
 
 function signInBannerForm(){
     return (
@@ -18,13 +17,13 @@ function signInBannerForm(){
             <button type="submit" className="SignIn-btn">
               Sign In
             </button>
-            <a href="#" className="forgot-password">
+            <a href="/" className="forgot-password">
               forgot password
             </a>
             <hr />
-            <a href="#" className="account">
-              Don't have an account
-            </a>
+            <p className="account">
+              Don't have an account?
+            </p>
             <Link to="/sign-up">
               <button className="submit-btn" type="submit">
                 Create an account

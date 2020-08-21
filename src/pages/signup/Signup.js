@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './signup.css';
+import './signup.scss';
 import Nav from '../../components/nav/nav.component';
+import Footer from '../../components/footer/footer.component';
 
 function Signup() {
   return (
@@ -33,7 +34,7 @@ function Signup() {
             <button
               type="submit"
               class="btn btn-danger"
-              style={{ background: '#FF0000', width: '350px', marginTop: '10px' }}
+              style={{ background: '#FF0000', width: '100%', marginTop: '10px' }}
             >
               Sign Up
             </button>
@@ -43,6 +44,7 @@ function Signup() {
           </form>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
