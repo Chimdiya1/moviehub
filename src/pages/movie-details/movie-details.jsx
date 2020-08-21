@@ -1,5 +1,5 @@
 import React from "react";
-import Genres from './genres'
+//import Genres from './genres'
 import Nav from "../../components/nav/nav.component";
 import "./movie-details.styles.scss";
 import { ReactComponent as PlayIcon } from "../../assets/images/play3.svg";
@@ -71,6 +71,7 @@ class MovieDetails extends React.Component {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     );
   }

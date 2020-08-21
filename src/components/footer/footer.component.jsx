@@ -20,7 +20,7 @@ const Footer = () => {
                             <li>Account</li>
                             <li>Ways To Watch</li>
                             <li>Corporate Information</li>
-                            <li>Netflix Originals</li>
+                            <li>MovieHub Originals</li>
                         </ul>
                     </div>
                     <div className="footer-box col-md-4">

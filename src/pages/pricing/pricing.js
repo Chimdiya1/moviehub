@@ -1,6 +1,7 @@
 import React from 'react';
 import './pricing.css';
 import Nav from '../../components/nav/nav.component';
+import Footer from '../../components/footer/footer.component';
 
 function Pricing() {
     return (
@@ -77,6 +78,7 @@ function Pricing() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
