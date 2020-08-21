@@ -1,18 +1,28 @@
-import React from 'react';
-import NavBar from './components/nav-bar/nav-bar.component';
-import LandingBanner from './components/landing-banner/landing-banner.component';
-import InfoCallout from './components/info-callout/info-callout.component';
-import Footer from './components/footer/footer.component';
+import React from "react";
+import Pricing from "./pages/pricing/pricing";
+import Signup from "./pages/signup/Signup";
+import Discover from "./pages/discover/discover";
+import Home from "./pages/home/home";
+import Signin from './pages/signin/Signin';
+import MovieDetails from "./pages/movie-details/movie-details.jsx";
+import Page404 from './pages/page404/page404';
+import { Switch, Route, Redirect } from "react-router-dom";
 
 function App() {
-    return (
-      <div>
-        <NavBar/>
-        <LandingBanner/>
-        <InfoCallout/>
-        <Footer/>
-      </div>
-    );
+  return (
+    <div className="app">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/discover" component={Discover} />
+        <Route exact path="/pricing" component={Pricing} />
+        <Route exact path="/sign-up" component={Signup} />
+        <Route exact path='/sign-in' component={Signin}/>
+        <Route exact path="/view/:type/:id" component={MovieDetails}/>
+        <Route exact path='/404' component={Page404}/>
+        <Redirect to='/404' />
+      </Switch>
+    </div>
+  );
 }
 
 export default App;
