@@ -4,8 +4,9 @@ import Nav from "../../components/nav/nav.component";
 import "./movie-details.styles.scss";
 import { ReactComponent as PlayIcon } from "../../assets/images/play3.svg";
 import ReactStars from 'react-rating-stars-component';
-import axios from 'axios';
 import Footer from '../../components/footer/footer.component';
+import axios from 'axios';
+import { API_KEY } from "../../redux/actions/index"
 
 
 class MovieDetails extends React.Component {
@@ -22,6 +23,11 @@ class MovieDetails extends React.Component {
     console.log(this.props)
     this.fetchMovieDetails()
   }
+  movieTrailer = async () => {
+    const movie_id = await axios.get(`https://api.themoviedb.org/3/${this.props.match.params.type}/${this.state.movie.id}/videos?api_key=${API_KEY}&language=en-US`)
+    console.log(movie_id.data.results[0].key)
+    window.location.href = `https://www.youtube.com/watch?v=${movie_id.data.results[0].key}`
+  }
   render() {
     const movie = this.state.movie
     console.log(movie)
@@ -31,7 +37,7 @@ class MovieDetails extends React.Component {
         <div className="movie">
           <div className="movie__img-container">
             <div className="img-overlay">
-              <button className="movie__play-button">
+              <button className="movie__play-button" onClick={this.movieTrailer}>
                 <PlayIcon className="movie__play-icon" /> Play
               </button>
             </div>
