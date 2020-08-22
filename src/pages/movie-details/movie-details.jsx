@@ -4,6 +4,7 @@ import Nav from "../../components/nav/nav.component";
 import "./movie-details.styles.scss";
 import { ReactComponent as PlayIcon } from "../../assets/images/play3.svg";
 import ReactStars from 'react-rating-stars-component';
+import Footer from '../../components/footer/footer.component';
 import axios from 'axios';
 import { API_KEY } from "../../redux/actions/index"
 
